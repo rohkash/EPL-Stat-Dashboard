@@ -15,7 +15,7 @@ team_ids = [57, 58, 61, 62, 63, 64, 65, 66, 67, 73, 76, 338, 340, 341, 351, 354,
 
 # Create instances of classes
 api_client = APIClient(api_key)
-data_storage = DataStorage(cluster_link, 'Database', 'Team Data')
+data_storage = DataStorage(cluster_link, 'Database', 'teamData')
 team_info_processor = TeamInfoProcessor(api_client, data_storage)
 team_season_metrics = SeasonMetricsUpdater(api_client, data_storage)
 
